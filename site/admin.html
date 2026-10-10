@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign-ups saved on this device for Cook & Bake Academy.">
+  <meta name="theme-color" content="#fbf7f1">
+  <title>Sign-up admin | Cook &amp; Bake Academy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+  <a class="skip-link" href="#main">Skip to sign-ups</a>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Cook and Bake Academy home"><span aria-hidden="true">C&amp;B</span><b>Cook &amp; Bake</b><small>Academy Singapore</small></a>
+    <nav aria-label="Admin navigation"><a href="index.html">Course site</a></nav>
+  </header>
+  <main class="admin-main" id="main">
+    <div class="admin-heading">
+      <div><p class="eyebrow">Device-local admin</p><h1>Course sign-ups</h1><p id="admin-status" aria-live="polite">Loading sign-ups…</p></div>
+      <button class="button button-primary" id="export-csv" type="button">Export CSV</button>
+    </div>
+    <p class="admin-note">This page only shows sign-ups saved in this browser on this device.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr id="signup-headings"></tr></thead>
+        <tbody id="signup-rows"></tbody>
+      </table>
+    </div>
+    <div class="admin-empty is-hidden" id="admin-empty"><h2>No sign-ups yet.</h2><p>Completed course sign-ups from this browser will appear here.</p><a class="button button-secondary" href="index.html#courses">Browse courses</a></div>
+  </main>
+  <script src="admin.js" defer></script>
+</body>
+</html>

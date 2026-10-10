@@ -1,4 +1,3 @@
-/Users/Admin/.rvm/scripts/rvm:15: operation not permitted: ps
 # vinext-starter
 
 A clean full-stack starter running on
