@@ -6,6 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "build:kb": "node scripts/build-kb.mjs",
     "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
     "build": "node scripts/build-static.mjs",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
@@ -14,6 +15,7 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@sqlite.org/sqlite-wasm": "^3.53.4-build2",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "react": "19.2.6",
